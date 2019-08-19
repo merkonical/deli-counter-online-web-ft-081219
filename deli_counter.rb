@@ -11,3 +11,4 @@ def line(other_deli)
   else 
     current_line = "The line is currently:"
     other_deli.each.with_index(1) do |person, i|
+      current_line << " #{i}. "
