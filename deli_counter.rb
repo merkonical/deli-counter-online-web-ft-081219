@@ -10,5 +10,9 @@ def line(other_deli)
     puts "The line is currently empty."
   else 
     current_line = "The line is currently:"
-    other_deli.each.with_index(1) do |person, i|
-      current_line << " #{i}. "
+    other_deli.each.with_index(1) do |person, n|
+      current_line << " #{n}. #{person}"
+    end 
+    puts current_line
+  end 
+end 
